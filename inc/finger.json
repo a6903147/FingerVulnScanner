@@ -1,0 +1,722 @@
+{
+    "fingerprint": [
+        {
+            "cms": "用友NC-Cloud",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Application",
+                "../../../../platform/resource/yonyou-yyy.js"
+            ]
+        },
+        {
+            "cms": "用友NC-Cloud",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "大型企业数字化平台",
+                "../../../../platform/resource/yonyou-yyy.js"
+            ]
+        },
+        {
+            "cms": "用友YonBIP",
+            "method": "keyword",
+            "location": "title",
+            "keyword": [
+                "YonBIP"
+            ]
+        },
+        {
+            "cms": "泛微-EOffice",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "3514039281"
+            ]
+        },
+        {
+            "cms": "用友U8CRM",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "用友U8CRM"
+            ]
+        },
+        {
+            "cms": "用友-UFIDA-NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<title>产品登录界面</title>",
+                "UFIDA NC是高端管理软件产品，提供了包括财务会计"
+            ]
+        },
+        {
+            "cms": "用友-政务财务系统",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/df/portal/getYearRgcode.do"
+            ]
+        },
+        {
+            "cms": "用友-移动系统管理",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<span></span>移动系统管理",
+                "img/login.png",
+                "../js/appActionLogCtr.js"
+            ]
+        },
+        {
+            "cms": "用友 NC Cloud",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "1596996317"
+            ]
+        },
+        {
+            "cms": "用友 NC Cloud",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<title> Application </title>",
+                "src=\"../../../../platform/resource/yonyou-yyy.js"
+            ]
+        },
+        {
+            "cms": "用友-时空KSOA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/images_index/productKSOA.jpg"
+            ]
+        },
+        {
+            "cms": "泛微OA ecology",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "ecology_JSessionid"
+            ]
+        },
+        {
+            "cms": "用友BIP 数据应用服务",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "3263329630"
+            ]
+        },
+        {
+            "cms": "泛微云桥 e-Bridge",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "wx.weaver"
+            ]
+        },
+        {
+            "cms": "泛微 OA",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "1578525679"
+            ]
+        },
+        {
+            "cms": "泛微云桥 e-Bridge",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "e-Bridge"
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/images/tongda.ico"
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Office Anywhere"
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "通达OA",
+                "login"
+            ]
+        },
+        {
+            "cms": "蓝凌 OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "sys/ui/extend/theme/default/style/icon.css",
+                "sys/ui/extend/theme/default/style/profile.css"
+            ]
+        },
+        {
+            "cms": "蓝凌 OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "蓝凌软件",
+                "App_Themes/Login"
+            ]
+        },
+        {
+            "cms": "用友软件",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "UFIDA Software CO.LTD all rights reserved"
+            ]
+        },
+        {
+            "cms": "用友NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "logo/images/ufida_nc.png",
+                "用友NC"
+            ]
+        },
+        {
+            "cms": "蓝凌EIS智慧协同平台",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/scripts/jquery.landray.common.js",
+                "蓝凌软件"
+            ]
+        },
+        {
+            "cms": "用友 NC Cloud",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "platform/pub/welcome.do"
+            ]
+        },
+        {
+            "cms": "用友GRP-U8 新政府会计制度专版",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "3995446927"
+            ]
+        },
+        {
+            "cms": "e-cology 运维管理平台",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "3910383959"
+            ]
+        },
+        {
+            "cms": "用友-畅捷通OEM",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "GNRemote.dll",
+                "Web_sc/login.gn"
+            ]
+        },
+        {
+            "cms": "泛微emp-移动管理平台",
+            "method": "icon_hash",
+            "location": "body",
+            "keyword": [
+                "2062026853"
+            ]
+        },
+        {
+            "cms": "用友-UFIDA-NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "nc.sfbase.applet.NCApplet.class"
+            ]
+        },
+        {
+            "cms": "用友GRP-U8",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "用友GRP-U8行政事业内控管理软件"
+            ]
+        },
+        {
+            "cms": "畅捷通-TPlus",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "><script>location='/tplus/';</script></body>"
+            ]
+        },
+        {
+            "cms": "Yonyou-NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "url=nccloud"
+            ]
+        },
+        {
+            "cms": "Yonyou-ERP",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "login_main_bg",
+                "login_owner"
+            ]
+        },
+        {
+            "cms": "Yonyou-ERP-NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/nc/servlet/nc.ui.iufo.login.index"
+            ]
+        },
+        {
+            "cms": "Yonyou-GRP-U8",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "window.location.replace(\"login.jsp?up=1\""
+            ]
+        },
+        {
+            "cms": "Yonyou-OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "url[(]/images/logon/bg_login.jpg[] repeat-x top"
+            ]
+        },
+        {
+            "cms": "Yonyou-U8-cloud",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "开启u8 cloud云端之旅"
+            ]
+        },
+        {
+            "cms": "Yonyou-Uclient",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "http-equiv=refresh content=0;url=index.jsp"
+            ]
+        },
+        {
+            "cms": "Yonyou-UFIDA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/system/login/login.asp?appid="
+            ]
+        },
+        {
+            "cms": "Yonyou-UFIDA-NC",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "ufida",
+                "logo/images/",
+                "logo/images/ufida_nc.png",
+                "<div id=\"nc_text\">",
+                "<div id=\"nc_img\" onmouseover=\"overimage('nc';",
+                "ufida nc"
+            ]
+        },
+        {
+            "cms": "E-cology-OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<script type=\"text/javascript\" src=\"/js/ecology"
+            ]
+        },
+        {
+            "cms": "Yonyou-Seeyon-OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/seeyon/user-data/images/login/login.gif",
+                "a6-v5企业版",
+                "seeyon",
+                "seeyonproductid",
+                "/seeyon/common/",
+                "var _ctxpath = '/seeyon'",
+                "a8-v5企业版",
+                "/seeyon/"
+            ]
+        },
+        {
+            "cms": "E-cology-OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Set-Cookie: ecology"
+            ]
+        },
+        {
+            "cms": "Yonyou-Seeyon-OA",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "path=/yyoa"
+            ]
+        },
+        {
+            "cms": "用友商战实践平台",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Login_Main_BG"
+            ]
+        },
+        {
+            "cms": "用友商战实践平台",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Login_Owner"
+            ]
+        },
+        {
+            "cms": "蓝凌EIS智慧协同平台",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/scripts/jquery.landray.common.js"
+            ]
+        },
+        {
+            "cms": "蓝凌EIS智慧协同平台",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "v11_QRcodeBar clr"
+            ]
+        },
+        {
+            "cms": "用友erp-nc",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/nc/servlet/nc.ui.iufo.login.Index"
+            ]
+        },
+        {
+            "cms": "用友U8",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "getFirstU8Accid"
+            ]
+        },
+        {
+            "cms": "用友ufida",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/System/Login/Login.asp?AppID="
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<link rel=\"shortcut icon\" href=\"/images/tongda.ico\" />"
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "Office Anywhere 2013"
+            ]
+        },
+        {
+            "cms": "泛微协同办公OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/wui/common/css/w7OVFont.css"
+            ]
+        },
+        {
+            "cms": "用友致远oa",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/seeyon/USER-DATA/IMAGES/LOGIN/login.gif"
+            ]
+        },
+        {
+            "cms": "用友致远oa",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/yyoa/"
+            ]
+        },
+        {
+            "cms": "蓝凌OA(EKP)",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "蓝凌OA"
+            ]
+        },
+        {
+            "cms": "蓝凌OA(EKP)",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "EKP"
+            ]
+        },
+        {
+            "cms": "泛微协同办公OA",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "testBanCookie"
+            ]
+        },
+        {
+            "cms": "蓝凌移动办公",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "蓝凌移动办公"
+            ]
+        },
+        {
+            "cms": "泛微e-cology",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "泛微e-cology"
+            ]
+        },
+        {
+            "cms": "用友 E-HR",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友 E-HR"
+            ]
+        },
+        {
+            "cms": "用友TurboCRM",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友TurboCRM"
+            ]
+        },
+        {
+            "cms": "用友GRP-U8(财务系统)",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友GRP-U8(财务系统)"
+            ]
+        },
+        {
+            "cms": "泛微云桥e-Bridge",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "泛微云桥e-Bridge"
+            ]
+        },
+        {
+            "cms": "用友优普U8系统",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友优普U8系统"
+            ]
+        },
+        {
+            "cms": "用友 商战实践平台",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友 商战实践平台"
+            ]
+        },
+        {
+            "cms": "蓝凌 智慧协同平台",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "蓝凌 智慧协同平台"
+            ]
+        },
+        {
+            "cms": "泛微E-office",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "泛微E-office"
+            ]
+        },
+        {
+            "cms": "用友 FE协同办公平台",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "用友 FE协同办公平台"
+            ]
+        },
+        {
+            "cms": "畅捷通 T+Cloud",
+            "method": "keyword",
+            "location": "header",
+            "keyword": [
+                "畅捷通 T+Cloud"
+            ]
+        },
+        {
+            "cms": "用友BIP 数据应用服务",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "1183274548"
+            ]
+        },
+        {
+            "cms": "用友GRP-U8 新政府会计制度专版",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "-299520369"
+            ]
+        },
+        {
+            "cms": "e-cology 运维管理平台",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "-384583337"
+            ]
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "<title>Office Anywhere",
+                "网络智能办公系统"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "通达OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "tongda2000.com",
+                "官网"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "通达OA",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "-187813927"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "通达OA",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "-759108386"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "泛微OA",
+            "method": "faviconhash",
+            "location": "body",
+            "keyword": [
+                "/wui/common/page/sysRemind.jsp"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "泛微e-mobile",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "移动管理平台-企业管理"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "蓝凌 OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "login_single_horizontal"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "蓝凌 OA",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "login_single_full_screen"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        },
+        {
+            "cms": "用友U8",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "U8远程接入官方网站",
+                "用友"
+            ],
+            "isImportant": true,
+            "type": "OA类"
+        }
+    ]
+}
