@@ -17,6 +17,7 @@
 
 ```bash
 python FingerVulnScanner.py -f url.txt
+```
 ![image](https://github.com/user-attachments/assets/77d12e48-8f19-4ad3-a358-eaeee68032aa)
 
 ## 项目基于
