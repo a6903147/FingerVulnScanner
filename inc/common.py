@@ -57,11 +57,20 @@ def get_parser():
 def get_target_list(path):
     target_list = []
     try:
-        for target in open(path, 'r', errors='ignores').readlines():
+        # 打开文件并读取所有行
+        for target in open(path, 'r', errors='ignore').readlines():
+            # 去除行尾的换行符
             target = target.replace('\n', '')
-            if re.search("https?://.+", target): target_list.append(target.replace('\n', ''))
+            # 检查是否是 HTTP 或 HTTPS URL
+            if re.search("https?://.+", target):
+                # 去掉 URL 末尾的 /
+                if target.endswith('/'):
+                    target = target[:-1]
+                # 加入列表
+                target_list.append(target)
         return target_list
     except:
+        # 如果发生异常则返回空列表
         return []
 
 

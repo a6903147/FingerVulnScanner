@@ -230,7 +230,7 @@ def logo1():
                   __/ |                                                                    
                  |___/                                                                     
 """, style="color(3)")
-    console.print(" " * 3 + "{[bold color(3)]https://github.com/[/bold color(3)]}")
+    console.print(" " * 3 + "{[bold color(3)]https://github.com/a6903147/FingerVulnScanner[/bold color(3)]}")
     console.print("\t " * 5 + f"Version: [color(9)]{VERSION}[/color(9)]")
 
 
@@ -245,7 +245,7 @@ def logo():
                   __/ |                                                                    
                  |___/                                                                     
 """, style="color(3)")
-    console.print(" " * 3 + "{[bold color(3)]https://github.com/[/bold color(3)]}")
+    console.print(" " * 3 + "{[bold color(3)]https://github.com/a6903147/FingerVulnScanner[/bold color(3)]}")
     console.print("\t " * 5 + f"Version: [color(9)]{VERSION}[/color(9)]\n")
 
 
