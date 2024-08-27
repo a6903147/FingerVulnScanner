@@ -6,8 +6,7 @@ def verify(url):
     relsult = {
         'name': '致远OA ajax.do 任意文件上传',
         'vulnerable': False,
-        'attack': True,
-        'about': 'https://mp.weixin.qq.com/s/wEFhqu8yjEyb2gGZL_if2A'
+        'attack': True
     }
     timeout = 5
     headers = {

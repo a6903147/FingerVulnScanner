@@ -47,7 +47,6 @@ Content-Type: image/jpeg
                 relsult['method'] = 'POST'
                 relsult['url'] = url
                 relsult['verify'] = verify_url
-                relsult['about'] = 'https://blog.csdn.net/weixin_44309905/article/details/121588557'
                 return relsult
         return relsult
     except:

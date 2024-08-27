@@ -53,7 +53,6 @@ def verify(url):
             relsult['vulnerable'] = True
             relsult['url'] = url
             relsult['whoami'] = res
-            relsult['about'] = 'https://www.o2oxy.cn/3561.html'
         return relsult
     except:
         return relsult

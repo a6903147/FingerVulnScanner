@@ -109,7 +109,6 @@ def verify(url):
                 relsult['url'] = url
                 relsult['version'] = version
                 relsult['sessions'] = r
-                relsult['about'] = 'https://github.com/NS-Sp4ce/TongDaOA-Fake-User/blob/master/POC.py'
                 return relsult
         return relsult
     except:

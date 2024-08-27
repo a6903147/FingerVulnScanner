@@ -22,7 +22,6 @@ def verify(url):
                     relsult['vulnerable'] = True
                     relsult['url'] = url
                     relsult['payload'] = vurl
-                    relsult['about'] = 'https://www.cnblogs.com/AtesetEnginner/p/12106741.html'
                     return relsult
             except:
                 continue

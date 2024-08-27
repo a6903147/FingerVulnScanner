@@ -6,8 +6,7 @@ def verify(url):
         'name': '致远OA Session泄漏漏洞(后台可getshell)',
         'url': url,
         'vulnerable': False,
-        'attack': False,
-        'about': 'https://www.zhihuifly.com/t/topic/3345, https://www.seebug.org/vuldb/ssvid-93312'
+        'attack': False
     }
     timeout = 3
     headers = {

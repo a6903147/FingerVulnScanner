@@ -28,7 +28,6 @@ def verify(url):
             relsult['user'] = 'sysadmin'
             relsult['MD5(password)'] = res.text.strip()
             relsult['payload'] = target_url
-            relsult['about'] = 'https://blog.csdn.net/weixin_43227251/article/details/115653646'
             return relsult
         else:
             return relsult

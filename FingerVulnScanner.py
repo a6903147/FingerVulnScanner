@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
-  ############################
- #   Author tr0uble_mAker   #
-###########################
+
 
 from inc import console
 

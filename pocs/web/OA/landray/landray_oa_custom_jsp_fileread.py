@@ -6,8 +6,7 @@ def verify(url):
         'name': '蓝凌OA custom.jsp 任意文件读取漏洞',
         'vulnerable': False,
         'url': url,
-        'attack': True,
-        'about': 'https://mp.weixin.qq.com/s/TkUZXKgfEOVqoHKBr3kNdw',
+        'attack': True
     }
     timeout = 3
     headers = {

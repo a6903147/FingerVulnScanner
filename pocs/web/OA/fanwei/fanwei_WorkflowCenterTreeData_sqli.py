@@ -30,7 +30,6 @@ def verify(url):
             relsult['url'] = url
             relsult['method'] = 'POST'
             relsult['payload'] = payload
-            relsult['about'] = 'https://zhuanlan.zhihu.com/p/86082614'
             return relsult
         else:
             return relsult

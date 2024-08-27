@@ -11,11 +11,10 @@ def verify(url):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML,like Gecko)',
         'Connection':'close'
     }
-    vurl = urllib.parse.urljoin(url, "/weaver/")
+    vurl = urllib.parse.urljoin(url, "/sys/ui/sys_ui_component/sysUiComponent.do?method=upload")
     try:
         response = requests.get(vurl, headers=headers, timeout=5)
-        response_time = response.elapsed.total_seconds()
-        if response.status_code == 200 and 'DatabaseName' in response.text:
+        if response.status_code == 200 and '部件包' in response.text:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

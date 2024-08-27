@@ -1,6 +1,6 @@
 from inc import init
 from inc import common
-from inc import output, dnslog
+from inc import output
 import queue, time, threading
 import concurrent.futures
 from func_timeout import func_set_timeout
@@ -54,7 +54,4 @@ class ThreadPool():
             return result
 
     def do_result(self, result):
-        if result.get("dnslog_domain"):
-            dnslog.dnslog_add_scan(result)
-        else:
-            output.put_output_queue(result)
+        output.put_output_queue(result)

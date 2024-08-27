@@ -6,8 +6,7 @@ def verify(url):
     relsult = {
         'name': '通达OA v11.8 api.ali.php任意文件上传漏洞',
         'vulnerable': False,
-        'attack': True,
-        'about': 'http://wiki.peiqi.tech/wiki/oa/%E9%80%9A%E8%BE%BEOA/%E9%80%9A%E8%BE%BEOA%20v11.8%20api.ali.php%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E.html',
+        'attack': True
     }
     randstr1 = ''.join(random.sample(string.digits + string.ascii_letters, 4))
     randstr2 = ''.join(random.sample(string.digits + string.ascii_letters, 4))

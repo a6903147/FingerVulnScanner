@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '通达OA v2017 video_file.php 任意文件下载漏洞',
         'vulnerable': False,
-        'url': url,
-        'about': 'http://wiki.peiqi.tech/wiki/oa/%E9%80%9A%E8%BE%BEOA/%E9%80%9A%E8%BE%BEOA%20v2017%20video_file.php%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%BC%8F%E6%B4%9E.html'
+        'url': url
     }
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0',

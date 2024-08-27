@@ -6,8 +6,7 @@ def verify(url):
         'name': '致远OA Session泄露(thirdpartyController.do)',
         'url': url,
         'vulnerable': False,
-        'attack': True,
-        'about': 'https://www.cnblogs.com/nul1/p/14749349.html, https://blog.csdn.net/maverickpig/article/details/118916085'
+        'attack': True
     }
     timeout = 3
     headers = {

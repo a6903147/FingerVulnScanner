@@ -13,8 +13,7 @@ def verify(url):
     }
     vurl = urllib.parse.urljoin(url, "/weaver/")
     try:
-        response = requests.get(vurl, headers=headers, timeout=5)
-        response_time = response.elapsed.total_seconds()
+        response = requests(vurl, headers=headers)
         if response.status_code == 200 and 'DatabaseName' in response.text:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl

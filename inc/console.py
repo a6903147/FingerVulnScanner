@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 from inc import init
-from inc import run, output, common, dnslog
+from inc import run, output, common
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from inc.common import get_poc_scriptname_list_by_search, get_value
 from inc.cms_detected import scan_rule
@@ -13,7 +13,11 @@ from inc.output import url_color, info_color, log_info
 
 def pocbomber_console():
     """控制台"""
-
+    if common.get_value("delay"):
+        common.set_value("max_threads", 1)
+    if common.get_value("show"):
+        output.show(common.get_value("script_list"))
+        sys.exit()
     if not common.get_value("target_list"):
         output.usage()
         sys.exit()
@@ -52,6 +56,7 @@ def pocbomber_console():
         else:
             cms_list.append(cms)
         script_list = get_poc_scriptname_list_by_search(poc_path, cms_list)
+        script_list = list(set(script_list))  # 对获取的poc进行去重
         common.set_value("current_times", 0)
         common.set_value("total_times", len(script_list))
         output.log_info(f"开始对[[{url_color}]{target}[/{url_color}]]进行漏洞检测，已加载 {len(script_list)} 条POC")

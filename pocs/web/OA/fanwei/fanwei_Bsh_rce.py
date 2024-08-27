@@ -28,7 +28,6 @@ def verify(target):
                         relsult['url'] = target
                         relsult['method'] = 'POST'
                         relsult['payload'] = payload
-                        relsult['about'] = 'https://www.cnblogs.com/yyhuni/p/14544814.html, https://blog.csdn.net/dust_hk/article/details/101621462'
                         return relsult
         return relsult
     except:

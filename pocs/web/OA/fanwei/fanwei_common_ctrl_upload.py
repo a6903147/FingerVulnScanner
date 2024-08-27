@@ -37,7 +37,6 @@ def verify(urllist):
             relsult['vulnerable'] = True
             relsult['url'] = urllist
             relsult['verify'] = GetShellurl
-            relsult['about'] = 'https://mp.weixin.qq.com/s/ePYRFPfu-pvWMKSiffporA, https://www.xpshuai.cn/posts/20282/'
             return relsult
         else:
             return relsult

@@ -6,8 +6,7 @@ def verify(url):
         'name': '蓝凌OA 未授权RCE(2022HVV)',
         'vulnerable': False,
         'attack': True,
-        'url': url,
-        'about': 'https://mp.weixin.qq.com/s/zV4h5d9DrI7Nm49suSzIWw'
+        'url': url
     }
     cmd = 'whoami'
     timeout = 5

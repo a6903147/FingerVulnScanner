@@ -3,7 +3,7 @@ import urllib
 
 def verify(url):
     relsult = {
-        'name': '',
+        'name': '通达OA v11.9 getdata 任意命令执行漏洞',
         'vulnerable': False,
         'url': url
     }

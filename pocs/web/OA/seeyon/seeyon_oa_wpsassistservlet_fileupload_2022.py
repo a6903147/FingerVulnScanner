@@ -7,7 +7,6 @@ def verify(url):
         'name': '致远OA wpsAssistServlet 任意文件上传-2022',
         'vulnerable': False,
         'attack': True,
-        'about': 'https://mp.weixin.qq.com/s/sWvB0f-Z5qqw-zfImS1tww',
     }
     randstr1 = ''.join(random.sample(string.digits + string.ascii_letters, 4))
     randstr2 = ''.join(random.sample(string.digits + string.ascii_letters, 4))
