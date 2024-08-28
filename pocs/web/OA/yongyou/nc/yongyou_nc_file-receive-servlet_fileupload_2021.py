@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '用友 NC >6.5 未授权文件上传漏洞(/servlet/FileReceiveServlet)',
         'vulnerable': False,
-        'url': url,
-        'attack': True
+        'url': url
     }
     timeout = 20
     headers = {

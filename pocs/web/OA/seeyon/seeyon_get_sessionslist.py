@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '致远OA Session泄漏漏洞(后台可getshell)',
         'url': url,
-        'vulnerable': False,
-        'attack': False
+        'vulnerable': False
     }
     timeout = 3
     headers = {

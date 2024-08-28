@@ -191,7 +191,7 @@ def show(script_list):
         pocinfo_dict[script] = common.get_value("pocinfo_dict")[script]
     poc_info_list = []
     exp_num = 0
-    log_info('loading POC/EXP ......')
+    log_info('loading POC ......')
     for pocinfo in pocinfo_dict.keys():
         poc_modole = pocinfo_dict[pocinfo]
         path = poc_modole.__file__
@@ -200,38 +200,15 @@ def show(script_list):
             name = result['name']
         except:
             continue
-        if result.get("attack"):
-            attack = result['attack']
-            exp_num += 1
-        else:
-            attack = False
-        poc_info = (name, path, attack)
+        poc_info = (name, path)
         poc_info_list.append(poc_info)
 
-    for (name, path, attack) in poc_info_list:
-        if attack:
-            console.print('[bold color(3)][+] Name: {0}\n    Attack: True[/bold color(3)]'.format(name))
-        else:
-            console.print('[bold color(12)][+] Name: {0}[/bold color(12)]'.format(name))
+    for (name, path) in poc_info_list:
+        console.print('[bold color(12)][+] Name: {0}[/bold color(12)]'.format(name))
         print('    Script: {0}'.format(path.split('\\')[-1] if "Windows" in OS else path.split('/')[-1]))
         print('    Path: {0}\n'.format(path))
 
-    print('''\n\t\t\t\t\t\t\t\t\t\tTotal     POC: {0}    EXP: {1}'''.format(len(poc_info_list), exp_num))
-
-
-def logo1():
-    console.print("""
-  ______ _                    __      __    _        _____                                 
- |  ____(_)                   \ \    / /   | |      / ____|                                
- | |__   _ _ __   __ _  ___ _ _\ \  / /   _| |_ __ | (___   ___ __ _ _ __  _ __   ___ _ __ 
- |  __| | | '_ \ / _` |/ _ \ '__\ \/ / | | | | '_ \ \___ \ / __/ _` | '_ \| '_ \ / _ \ '__|
- | |    | | | | | (_| |  __/ |   \  /| |_| | | | | |____) | (_| (_| | | | | | | |  __/ |   
- |_|    |_|_| |_|\__, |\___|_|    \/  \__,_|_|_| |_|_____/ \___\__,_|_| |_|_| |_|\___|_|   
-                  __/ |                                                                    
-                 |___/                                                                     
-""", style="color(3)")
-    console.print(" " * 3 + "{[bold color(3)]https://github.com/a6903147/FingerVulnScanner[/bold color(3)]}")
-    console.print("\t " * 5 + f"Version: [color(9)]{VERSION}[/color(9)]")
+    print('''\n\t\t\t\t\t\t\t\t\t\tTotal     POC: {0}'''.format(len(poc_info_list)))
 
 
 def logo():

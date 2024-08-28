@@ -47,7 +47,7 @@ def get_parser():
     p.add_argument("-t", "--threads", type=int, help="指定线程池最大并发数量(默认{0})".format(config.max_threads))
     p.add_argument("-to", "--timeout", type=int, help="指定poc最大超时时间(默认{0}s)".format(config.timeout))
     p.add_argument("-d", "--delay", type=int, help="指定poc休眠时间(默认{0}s)".format(config.delay))
-    p.add_argument("--show", action='store_true', help="列所有出poc/exp的详细信息")
+    p.add_argument("--show", action='store_true', help="列所有出poc的详细信息")
     args = parser.parse_args()
     return args
 

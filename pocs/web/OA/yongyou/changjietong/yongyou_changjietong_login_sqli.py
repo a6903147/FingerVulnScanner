@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '畅捷通sql注入登录后台rce',
         'vulnerable': False,
-        'url': url,
-        'attack': False,
+        'url': url
     }
     timeout = 3
     headers = {

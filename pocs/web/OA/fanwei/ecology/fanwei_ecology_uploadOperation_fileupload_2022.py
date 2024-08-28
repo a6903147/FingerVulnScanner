@@ -5,8 +5,7 @@ import urllib, random, string
 def verify(url):
     result = {
         'name': '泛微OA E-Cology uploadOperation.jsp 任意文件上传(2022HVV)',
-        'vulnerable': False,
-        'attack': True
+        'vulnerable': False
      }
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
@@ -30,17 +29,3 @@ def verify(url):
         return result
     except:
         return result
-
-def attack(url):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
-        'Content-Type': 'application/x-www-form-urlencoded',
-    }
-    timeout = 3
-    vurl = urllib.parse.urljoin(url, '/mobile/plugin/VerifyQuickLogin.jsp')
-    payload_data = 'identifier=1&language=1&ipaddress=x.x.x.x'
-    try:
-
-        return True
-    except:
-        return False

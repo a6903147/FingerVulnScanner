@@ -5,7 +5,6 @@ def verify(url):
     relsult = {
         'name': '通达OA sqli-布尔盲注(/mobile/api/qyapp.vote.submit.php)',
         'vulnerable': False,
-        'attack': False,
         'url': url,
         'method': 'post',
         'position': 'data',

@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '致远OA Session泄露(thirdpartyController.do)',
         'url': url,
-        'vulnerable': False,
-        'attack': True
+        'vulnerable': False
     }
     timeout = 3
     headers = {

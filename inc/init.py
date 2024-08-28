@@ -6,7 +6,7 @@ from inc.output import log_info
 
 def init_all():
     output.logo()
-    log_info('Initializing POC/EXP ......')
+    log_info('Initializing POC ......')
     args = common.get_parser()
     common._init()
     poc_path, poc_list = common.do_path(args.poc)

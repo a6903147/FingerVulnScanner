@@ -5,7 +5,6 @@ def verify(url):
     relsult = {
         'name': '用友NC 任意文件读取(/NCFindWeb)',
         'vulnerable': False,
-        'attack': False,
         'url': url,
     }
     timeout = 3

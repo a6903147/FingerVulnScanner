@@ -5,8 +5,7 @@ import base64,time
 def verify(url):
     relsult = {
         'name': '通达OA v11.8 api.ali.php任意文件上传漏洞',
-        'vulnerable': False,
-        'attack': True
+        'vulnerable': False
     }
     randstr1 = ''.join(random.sample(string.digits + string.ascii_letters, 4))
     randstr2 = ''.join(random.sample(string.digits + string.ascii_letters, 4))

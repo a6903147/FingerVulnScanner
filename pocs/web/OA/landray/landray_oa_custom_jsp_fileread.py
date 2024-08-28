@@ -5,8 +5,7 @@ def verify(url):
     relsult = {
         'name': '蓝凌OA custom.jsp 任意文件读取漏洞',
         'vulnerable': False,
-        'url': url,
-        'attack': True
+        'url': url
     }
     timeout = 3
     headers = {
