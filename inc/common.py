@@ -36,10 +36,10 @@ exit_event = Event()
 
 def get_parser():
     parser = argparse.ArgumentParser(
-        usage='python3 pocbomber.py -u http://xxxx -o report.txt',
-        description='POC bomber: 基于python3的poc/exp集成框架',
+        usage='python3 FingerVulnScanner.py -u http://xxxx -o report.txt',
+        description='FingerVulnScanner: 基于指纹的精确化poc攻击框架',
     )
-    p = parser.add_argument_group('POC-bomber 的参数')
+    p = parser.add_argument_group('FingerVulnScanner 的参数')
     p.add_argument("-u", "--url", type=str, help="测试单条url")
     p.add_argument("-f", "--file", type=str, help="测试多个url文件")
     p.add_argument("-o", "--output", type=str, help="报告生成路径(默认不生成报告)")
@@ -48,8 +48,6 @@ def get_parser():
     p.add_argument("-to", "--timeout", type=int, help="指定poc最大超时时间(默认{0}s)".format(config.timeout))
     p.add_argument("-d", "--delay", type=int, help="指定poc休眠时间(默认{0}s)".format(config.delay))
     p.add_argument("--show", action='store_true', help="列所有出poc/exp的详细信息")
-    p.add_argument("--attack", action='store_true', help="使用poc文件中的exp进行攻击")
-    p.add_argument("--dnslog", action='store_true', help="使用dnslog平台检测无回显漏洞")
     args = parser.parse_args()
     return args
 

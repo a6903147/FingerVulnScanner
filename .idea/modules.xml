@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/POC-bomber-main.iml" filepath="$PROJECT_DIR$/.idea/POC-bomber-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FingerVulnScanner.iml" filepath="$PROJECT_DIR$/.idea/FingerVulnScanner.iml" />
     </modules>
   </component>
 </project>

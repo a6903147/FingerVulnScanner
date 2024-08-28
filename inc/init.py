@@ -1,15 +1,14 @@
 import platform
 import queue
 from inc import common, config, output
+from inc.output import log_info
 
 
 def init_all():
     output.logo()
+    log_info('Initializing POC/EXP ......')
     args = common.get_parser()
     common._init()
-    # cms, status_code, title = scan_cms([args.url] if args.url else common.get_target_list(args.file))
-    # cms = cms_replace(cms)  # 对指纹匹配到的cms和poc的cms进行适配
-    # print(cms)
     poc_path, poc_list = common.do_path(args.poc)
     common.set_value("init", True)
     common.set_value("os", "windows" if "Windows" in platform.system() else "linux")
@@ -20,13 +19,14 @@ def init_all():
     common.set_value("timeout", args.timeout if args.timeout else config.timeout)  # --timeout
     common.set_value("delay", args.delay if args.delay else config.delay)  # --delay
     common.set_value("target_list", [args.url] if args.url else common.get_target_list(args.file))  # --url,--file
-    common.set_value("pocinfo_dict", common.get_pocinfo_dict())
+    common.set_value("pocinfo_dict", common.get_pocinfo_dict())  # 初始化poc库，耗时较长
     common.set_value("script_list", common.get_poc_scriptname_list_by_search(poc_path, poc_list))
     common.set_value("total_times", len(common.get_value("script_list")))
     common.set_value("current_times", 0)
     common.set_value("success_times", 0)
     common.set_value("output_queue", queue.Queue())
     common.set_value("success_list", [])
+    log_info(f'Initialization complete, with a total of {len(common.get_value("script_list"))} POCs')
 
 
 if not common.get_value("init"):

@@ -11,7 +11,7 @@ import sys
 from inc.output import url_color, info_color, log_info
 
 
-def pocbomber_console():
+def console():
     """控制台"""
     if common.get_value("delay"):
         common.set_value("max_threads", 1)
