@@ -148,40 +148,37 @@ def get_pocinfo_dict():  # 获取pocinfo字典
     return pocinfo_dict
 
 
-def get_poc_scriptname_list_by_search(path, search_keys_list):  # 定义函数，接收路径和搜索关键字列表作为参数
-    search_flag = True if len(search_keys_list) > 0 else False  # 判断是否有搜索关键字，有则设置标志为True
-    poc_scriptname_list = []  # 初始化一个空列表，用于存储找到的POC脚本名称
-    current_path = os.path.abspath('.')  # 获取当前工作目录的绝对路径
-    pocs_base_path = os.path.join(current_path, path)  # 构造POC脚本的基础路径
-    poc_path_list = get_dir_files(pocs_base_path)  # 获取基础路径下所有POC文件的路径列表
+def get_poc_scriptname_list_by_search(path, search_keys_list):
+    search_flag = True if len(search_keys_list) > 0 else False
+    poc_scriptname_list = []
+    current_path = os.path.abspath('.')
+    pocs_base_path = os.path.join(current_path, path)
+    poc_path_list = get_dir_files(pocs_base_path)
 
-    if not search_flag:  # 如果没有提供搜索关键字
-        for poc_path in poc_path_list:  # 遍历POC文件路径列表
-            script_name = get_filename_by_path(poc_path.replace(current_path, ''))  # 从路径中提取文件名
-            if script_name in get_value("pocinfo_dict").keys():  # 检查提取的文件名是否在pocinfo_dict字典的键中
-                poc_scriptname_list.append(script_name)  # 如果在，则添加到POC脚本名称列表中
-        return poc_scriptname_list  # 返回POC脚本名称列表
+    if not search_flag:
+        for poc_path in poc_path_list:
+            script_name = get_filename_by_path(poc_path.replace(current_path, ''))
+            if script_name in get_value("pocinfo_dict").keys():
+                poc_scriptname_list.append(script_name)
+        return poc_scriptname_list
 
     # 如果提供了搜索关键字
-    for search_key in search_keys_list:  # 遍历搜索关键字列表
-        for poc_path in poc_path_list:  # 遍历POC文件路径列表
-            script_name = get_filename_by_path(poc_path.replace(current_path, ''))  # 从路径中提取文件名
-            # script_path = poc_path.replace(current_path, '')
-            # print('search_key:', search_key)
-            # print('poc_path:', poc_path)
+    for search_key in search_keys_list:
+        for poc_path in poc_path_list:
+            script_name = get_filename_by_path(poc_path.replace(current_path, ''))
             if search_key in poc_path:  # 检查搜索关键字是否与文件路径匹配
                 if script_name in get_value("pocinfo_dict").keys():  # 检查文件名是否在pocinfo_dict字典的键中
-                    output.log_info('成功检测到poc文件: {0}'.format(script_name))  # 如果在，记录信息日志
-                    poc_scriptname_list.append(script_name)  # 添加到POC脚本名称列表中
-                    search_flag = False  # 找到匹配后，将搜索标志设置为False
+                    output.log_info('成功检测到poc文件: {0}'.format(script_name))
+                    poc_scriptname_list.append(script_name)
+                    search_flag = False
                 else:
-                    search_flag = True  # 如果文件名不在pocinfo_dict字典中，则保持搜索标志为True
-                    output.log_error('加载失败: {0}'.format(search_key))  # 记录错误日志
-                    break  # 并中断当前循环
-        if search_flag:  # 如果循环结束后，搜索标志仍为True
-            output.log_warning('未检测到poc文件: {0}'.format(search_key))  # 记录警告日志，表明未找到匹配的POC文件
-        search_flag = True  # 重置搜索标志为True，以便下一个搜索关键字的检查
-    return poc_scriptname_list  # 返回找到的POC脚本名称列表
+                    search_flag = True
+                    output.log_error('加载失败: {0}'.format(search_key))
+                    break
+        if search_flag:
+            output.log_warning('未检测到poc文件: {0}'.format(search_key))
+        search_flag = True
+    return poc_scriptname_list
 
 
 def do_path(path):
