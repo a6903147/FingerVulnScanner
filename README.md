@@ -90,13 +90,6 @@ FingerVulnScanner.py-->inc/init.py-->inc/console.py-->inc.cms_detected.scan_rule
 
 
 
-## 漏洞库
-
-```
-https://github.com/wy876/POC
-https://www.yuque.com/u25571586/dyaqbugs?# 密码：xnzx
-```
-
 ## 其他工具
 
 ### generate_script
