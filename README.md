@@ -95,8 +95,10 @@ FingerVulnScanner.py-->inc/init.py-->inc/console.py-->inc.cms_detected.scan_rule
 ### generate_script
 
 将请求包写到post.txt内，然后运行generate_script.py就会根据请求包生成对应的python的request请求。
-![image-20240827155929423](https://github.com/user-attachments/assets/f5f0cfd9-f205-4e81-b076-c9ffc56a6658)
 ![image-20240827155939112](https://github.com/user-attachments/assets/dbcd0d43-494d-4179-aa4f-d6cbce51f5f1)
+
+![image-20240827155929423](https://github.com/user-attachments/assets/f5f0cfd9-f205-4e81-b076-c9ffc56a6658)
+
 
 ```python
 import os
