@@ -248,4 +248,4 @@ print(f"完成提取并去重指纹，共计{len(list(unique_matched_fingerprint
 
   添加通达、蓝凌、亿赛通的部分poc，所有poc共计154个。
 
-  [![](https://starchart.cc/a6903147/FingerVulnScanner)](https://starchart.cc/a6903147/FingerVulnScanner)
+[![](https://starchart.cc/a6903147/FingerVulnScanner.svg)](https://starchart.c/a6903147/FingerVulnScanner)
