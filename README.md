@@ -247,7 +247,6 @@ print(f"完成提取并去重指纹，共计{len(list(unique_matched_fingerprint
 - 2024年8月30日
 
   添加通达、蓝凌、亿赛通的部分poc，所有poc共计154个。
-  stars
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/a6903147/FingerVulnScanner.svg?variant=adaptive)](https://starchart.cc/a6903147/FingerVulnScanner)
