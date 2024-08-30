@@ -247,3 +247,5 @@ print(f"完成提取并去重指纹，共计{len(list(unique_matched_fingerprint
 - 2024年8月30日
 
   添加通达、蓝凌、亿赛通的部分poc，所有poc共计154个。
+
+  [![](https://starchart.cc/wy876/POC.svg)](https://starchart.cc/wy876/POC)
