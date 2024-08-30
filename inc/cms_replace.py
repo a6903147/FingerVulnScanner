@@ -54,7 +54,9 @@ def cms_replace(cms):
         '蓝凌OA(EKP)': 'landray',
         '蓝凌移动办公': 'landray',
         '蓝凌 智慧协同平台': 'landray',
-
+        # 亿赛通
+        '亿赛通-电子文档安全管理系统': 'esafenet',
+        '亿赛通电子文档安全管理系统': 'esafenet'
 
     }
 

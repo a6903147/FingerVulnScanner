@@ -119,7 +119,7 @@
             ]
         },
         {
-            "cms": "泛微OA",
+            "cms": "泛微 OA",
             "method": "icon_hash",
             "location": "body",
             "keyword": [
@@ -258,6 +258,15 @@
             "location": "body",
             "keyword": [
                 "用友GRP-U8行政事业内控管理软件"
+            ]
+        },
+        {
+            "cms": "亿赛通电子文档安全管理系统",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "电子文档安全管理系统",
+                "CDGServer3"
             ]
         },
         {
@@ -717,6 +726,16 @@
             ],
             "isImportant": true,
             "type": "OA类"
+        },
+        {
+            "cms": "亿赛通-电子文档安全管理系统",
+            "method": "keyword",
+            "location": "body",
+            "keyword": [
+                "/CDGServer3/SysConfig.jsp"
+            ],
+            "isImportant": true,
+            "type": "其他"
         }
     ]
 }
