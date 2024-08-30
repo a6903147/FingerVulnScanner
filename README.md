@@ -95,6 +95,8 @@ FingerVulnScanner.py-->inc/init.py-->inc/console.py-->inc.cms_detected.scan_rule
 ### generate_script
 
 将请求包写到post.txt内，然后运行generate_script.py就会根据请求包生成对应的python的request请求。
+![image-20240827155929423](https://github.com/user-attachments/assets/f5f0cfd9-f205-4e81-b076-c9ffc56a6658)
+![image-20240827155939112](https://github.com/user-attachments/assets/dbcd0d43-494d-4179-aa4f-d6cbce51f5f1)
 
 ```python
 import os
@@ -226,6 +228,7 @@ print(f"完成提取并去重指纹，共计{len(list(unique_matched_fingerprint
 
 1. 根据cms类型在对应的文件夹下创建py文件，并复制poc_model.txt的内容到你新建的poc.py文件内
 2. 填写relsult.name为漏洞名称，以及16行的requests的请求方法（如果默认填写get方法，可能会在应该使用post请求的地方忘记修改）
+![image-20240829162440350](https://github.com/user-attachments/assets/f3b270fe-9fe1-4c15-b567-1ccab43d1d56)
 
 3. 使用`generate_script/generate_script.py`工具根据请求包生成对应的request请求，主要是对于header的处理，如果手动写header会比较繁琐。
 4. 根据生成的`send_request.py`的内容，填写编写POC的header和data（如果存在）
